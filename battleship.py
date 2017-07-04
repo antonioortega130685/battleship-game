@@ -16,7 +16,7 @@ print ""
 print "WELCOME TO BATTLESHIP"
 print ""
 print "You must guess and enter two numeric values from 0 to 4 in order to sink my ship."
-print "If at any time you want to leave, just type 'e' and press Enter."
+print "If at any point you want to leave, just type 'e' and press Enter."
 print "Please note that if you already made an attempt, you should enter a valid numeric value before being prompted to enter 'e' to exit."
 print ""
 print "GOOD LUCK!!! :)"
@@ -44,7 +44,7 @@ for turn in range(4):
         print "Thank you for playing! Have a nice day!"
         break
     while not r.isdigit() and 'e':
-        r = raw_input("You must to enter a Valid Guess Row:")
+        r = raw_input("You must enter a Valid Guess Row:")
     guess_row = int(r)
 
     h = raw_input("Guess Col:")

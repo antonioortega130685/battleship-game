@@ -13,7 +13,7 @@ print ""
 print ""
 print ""
 print ""
-print "WELCOME TO BATTLESHIP"
+print "WELCOME TO BATTLESHIP, by Antonio Ortega"
 print ""
 print "You must guess and enter two numeric values from 0 to 4 in order to sink my ship."
 print "If at any point you want to leave, just type 'e' and press Enter."
@@ -92,6 +92,6 @@ for turn in range(4):
         print ""
     else:
         print ""
-        print "Strike",turn+1,"Out"
+        print "Strike",turn+1
         print ""
     

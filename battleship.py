@@ -1,3 +1,4 @@
+import time
 from random import randint
 
 board = []
@@ -41,7 +42,8 @@ ship_col = random_col(board)
 for turn in range(4):
     r = raw_input("Guess Row:")
     if r == 'e':
-        print "Thank you for playing! Have a nice day!"
+        print "Thank you for playing! Have a nice day! ZZZZ in 3, 2, 1 ..."
+        time.sleep(4)
         break
     while not r.isdigit() and 'e':
         r = raw_input("You must enter a Valid Guess Row:")
@@ -49,7 +51,8 @@ for turn in range(4):
 
     h = raw_input("Guess Col:")
     if h == 'e':
-        print "Thank you for playing! Have a nice day!"
+        print "Thank you for playing! Have a nice day! ZZZZ in 3, 2, 1 ..."
+        time.sleep(4)
         break
     while not h.isdigit() and 'e':
         h = raw_input("You must enter a valid Guess Col:")
@@ -59,6 +62,9 @@ for turn in range(4):
         print ""
         print "Congratulations! You sunk my battleship!"
         print ""
+        print "Keep practicing until you are eligible to claim the right to be called a psychic ;)"
+        print "Thank you for playing!"
+        time.sleep(8)
         break
     else:
         if (guess_row < 0 or guess_row > 4) or (guess_col < 0     or guess_col > 4):
@@ -84,7 +90,9 @@ for turn in range(4):
         print "Don't worry just keep on tr-, wait... G A M E   O V E R"
         print ""
         print 'Sorry!'
-        print 'Come back soon! :D'
+        print 'Better luck next time! :D'
+        print "Closing automatically in 8 secs"
+        time.sleep(8)
         break
     elif turn == 2:
         print ""
